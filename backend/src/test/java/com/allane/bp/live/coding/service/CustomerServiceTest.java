@@ -44,7 +44,6 @@ class CustomerServiceTest {
 
     @Test
     void getCustomerForId_notFound() {
-        var customerEntity = new CustomerEntity();
         when(this.customerRepository.findById(any())).thenReturn(Optional.empty());
 
         assertThatThrownBy(() -> this.underTest.getCustomerForId(1L))
