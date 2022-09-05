@@ -1,0 +1,41 @@
+plugins {
+    id 'org.springframework.boot' version '2.7.3'
+    id 'io.spring.dependency-management' version '1.0.13.RELEASE'
+}
+
+group = 'com.allane.bp.live'
+version = '0.0.1-SNAPSHOT'
+
+ext {
+    mapStructVersion = '1.5.2.Final'
+    lombokVersion = '1.18.24'
+}
+
+dependencies {
+    implementation project(":contract-server")
+    implementation group: 'org.springframework.boot', name: 'spring-boot-starter-data-jpa'
+    implementation group: 'org.springframework.boot', name: 'spring-boot-starter-web'
+    implementation group: 'org.springframework.boot', name: 'spring-boot-starter-actuator'
+    implementation group: 'org.flywaydb', name: 'flyway-core'
+    implementation group: 'org.flywaydb', name: 'flyway-mysql'
+
+    implementation group: 'org.springdoc', name: 'springdoc-openapi-ui', version: '1.6.11'
+
+
+    compileOnly group: 'org.mapstruct', name: 'mapstruct', version: mapStructVersion
+
+    compileOnly group: 'org.projectlombok', name: 'lombok', version: lombokVersion
+    annotationProcessor group: 'org.mapstruct', name: 'mapstruct-processor', version: mapStructVersion
+    annotationProcessor group: 'org.projectlombok', name: 'lombok', version: lombokVersion
+    annotationProcessor group: 'org.projectlombok', name: 'lombok-mapstruct-binding', version: '0.2.0'
+
+    runtimeOnly group: 'mysql', name: 'mysql-connector-java'
+    // don't this in production
+    implementation group: 'org.testcontainers', name: 'mysql', version: '1.17.3'
+
+    testImplementation group: 'org.springframework.boot', name: 'spring-boot-starter-test'
+}
+
+tasks.named('test') {
+    useJUnitPlatform()
+}

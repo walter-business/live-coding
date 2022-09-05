@@ -1,0 +1,4 @@
+rootProject.name = 'coding'
+include 'contract-server'
+include 'backend'
+

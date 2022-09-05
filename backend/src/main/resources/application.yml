@@ -1,0 +1,15 @@
+spring:
+  application.name: leasing
+
+  datasource:
+    url: jdbc:tc:mysql:8.0.30://mysql/leasing
+    driver-class-name: org.testcontainers.jdbc.ContainerDatabaseDriver
+  jpa:
+    properties:
+      hibernate.dialect: org.hibernate.dialect.MySQL8Dialect
+    hibernate:
+      ddl-auto: validate
+
+  flyway:
+    enabled: true
+    baseline-on-migrate: true
