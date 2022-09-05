@@ -46,7 +46,7 @@ follows.
 
 ### Contract Overview
 
-![Contract Overview](/home/w9704/projects/private/live-coding/readme-assets/leasing-contract-wireframe.png)
+![Contract Overview](readme-assets/leasing-contract-wireframe.png)
 
 There is planned to show a contract overview with some columns:
 
@@ -63,19 +63,19 @@ There is planned to show a contract overview with some columns:
 
 ### Customer Details
 
-![Customer Details](/home/w9704/projects/private/live-coding/readme-assets/leasing-contract-wireframe-customer.png)
+![Customer Details](readme-assets/leasing-contract-wireframe-customer.png)
 
 Edit mask to create/edit a customer.
 
 ### Vehicle
 
-![Vehicle Details](/home/w9704/projects/private/live-coding/readme-assets/leasing-contract-wireframe-vehicle-details.png)
+![Vehicle Details](readme-assets/leasing-contract-wireframe-vehicle-details.png)
 
 Edit mask to create/edit a vehicle.
 
 ### Leasing Contract
 
-![](/home/w9704/projects/private/live-coding/readme-assets/leasing-contract-wireframe-contract.png)
+![Leasing Contract](readme-assets/leasing-contract-wireframe-contract.png)
 
 Edit mask to create/edit a leasing contract.
 
