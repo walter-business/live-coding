@@ -1,7 +1,7 @@
 openapi: 3.0.1
 info:
   title: Leasing Service
-  version: 1.0
+  version: "1.1"
   termsOfService: "https://allane.com/terms/"
   contact:
     email: lease-service@allane.com
@@ -28,7 +28,7 @@ paths:
             format: int64
       responses:
         200:
-          description: found customer
+          description: "found customer"
           content:
             application/json:
               schema:
@@ -55,13 +55,13 @@ paths:
             format: int64
       responses:
         200:
-          description: found vehicle
+          description: "found vehicle"
           content:
             application/json:
               schema:
                 $ref: "#/components/schemas/Vehicle"
         404:
-          description: "customer not found"
+          description: "vehicle not found"
           content:
             application/json:
               schema:
