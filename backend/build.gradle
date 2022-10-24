@@ -23,6 +23,7 @@ dependencies {
 
 
     compileOnly group: 'org.mapstruct', name: 'mapstruct', version: mapStructVersion
+    testImplementation group: 'org.mapstruct', name: 'mapstruct', version: mapStructVersion
 
     compileOnly group: 'org.projectlombok', name: 'lombok', version: lombokVersion
     annotationProcessor group: 'org.mapstruct', name: 'mapstruct-processor', version: mapStructVersion

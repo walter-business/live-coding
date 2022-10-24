@@ -4,10 +4,10 @@ import java.util.Optional;
 
 import com.allane.bp.live.coding.entity.CustomerEntity;
 import com.allane.bp.live.coding.mapper.CustomerMapper;
-import com.allane.bp.live.coding.mapper.CustomerMapperImpl;
 import com.allane.bp.live.coding.repository.CustomerRepository;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
+import org.mapstruct.factory.Mappers;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.Spy;
@@ -30,7 +30,7 @@ class CustomerServiceTest {
     private CustomerRepository customerRepository;
 
     @Spy
-    private CustomerMapper customerMapper = new CustomerMapperImpl();
+    private CustomerMapper customerMapper = Mappers.getMapper(CustomerMapper.class);
 
     @Test
     void getCustomerForId_found() {
