@@ -17,7 +17,7 @@ paths:
     summary: get customer for id
     get:
       tags:
-        - customer
+        - Customer
       operationId: getCustomerForId
       parameters:
         - name: id
@@ -44,7 +44,7 @@ paths:
     summary: get vehicle for id
     get:
       tags:
-        - vehicle
+        - Vehicle
       operationId: getVehicleForId
       parameters:
         - name: id
